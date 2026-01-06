@@ -20,13 +20,13 @@
   };
 
   home.file = {
-    ".config/alacritty".source = ~/.dots/config/alacritty;
-    ".config/nvim-dev".source = ~/.dots/config/nvim-dev;
-    ".config/nvim".source = ~/.dots/config/nvim;
-    ".config/zed".source = ~/.dots/config/zed;
-    ".config/fish".source = ~/.dots/config/fish;
-    ".config/niri".source = ~/.dots/config/niri;
-    ".config/noctalia".source = ~/.dots/config/noctalia;
+    ".config/alacritty".source = ~/home-manager/config/alacritty;
+    ".config/nvim-dev".source = ~/home-manager/config/nvim-dev;
+    ".config/nvim".source = ~/home-manager/config/nvim;
+    ".config/zed".source = ~/home-manager/config/zed;
+    ".config/fish".source = ~/home-manager/config/fish;
+    ".config/niri".source = ~/home-manager/config/niri;
+    ".config/noctalia".source = ~/home-manager/config/noctalia;
   };
 
   programs.home-manager.enable = true;
