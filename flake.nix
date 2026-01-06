@@ -70,7 +70,7 @@
           {
             nixpkgs.config.allowUnfree = true;
           }
-          ./pmoieni/home.nix
+          ./hm/pmoieni/home.nix
         ];
       };
 
@@ -81,7 +81,7 @@
           ...
         }:
         {
-          imports = [ ./pmoieni/options.nix ];
+          imports = [ ./hm/pmoieni/options.nix ];
 
           config = {
             home-manager = {
@@ -92,7 +92,7 @@
               };
               users.pmoieni = {
                 imports = [
-                  ./pmoieni/home.nix
+                  ./hm/pmoieni/home.nix
                 ];
               };
             };

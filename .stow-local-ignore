@@ -1,0 +1,15 @@
+^/README.*
+^/LICENSE.*
+
+\.git
+\.gitignore
+\.gitmodules
+
+^/flake\..+
+^/shell.nix
+^/nix
+^/hm
+^/result.*
+
+^/.envrc
+^/.direnv
