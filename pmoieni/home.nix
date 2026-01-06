@@ -1,8 +1,10 @@
+{ inputs, ... }:
 {
   imports = [
+    inputs.stylix.homeModules.stylix
     ./options.nix
     ./cli.nix
-    # ./gui.nix
+    ./gui.nix
   ];
 
   home = {
