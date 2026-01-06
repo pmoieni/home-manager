@@ -9,6 +9,7 @@
 ^/shell.nix
 ^/nix
 ^/hm
+^/wallpapers
 ^/result.*
 
 ^/.envrc

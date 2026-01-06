@@ -500,7 +500,7 @@
         "wifiDetailsViewMode": "grid"
     },
     "wallpaper": {
-        "directory": "/home/pmoieni/.dots/wallpapers",
+        "directory": "/home/pmoieni/home-manager/wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "fillColor": "#000000",
