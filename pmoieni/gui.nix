@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   stylix = {
-    enable = false;
+    enable = true;
     targets = {
       gtk.enable = true;
       qt.enable = true;

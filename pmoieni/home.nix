@@ -2,7 +2,7 @@
   imports = [
     ./options.nix
     ./cli.nix
-    ./gui.nix
+    # ./gui.nix
   ];
 
   home = {
