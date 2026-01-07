@@ -7,7 +7,6 @@
     tokei
     gh
     ripgrep
-    git
     subversion
     stow
   ];
