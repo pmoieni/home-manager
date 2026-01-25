@@ -80,6 +80,7 @@
                     "useFixedWidth": false
                 },
                 {
+                    "compactMode": false,
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
