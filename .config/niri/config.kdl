@@ -268,5 +268,5 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 
-    Mod+E { spawn "nemo"; }
+    Mod+E { spawn "thunar"; }
 }
