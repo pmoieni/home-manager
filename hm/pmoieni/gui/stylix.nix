@@ -11,12 +11,6 @@
       package = pkgs.bibata-cursors;
       size = 12;
     };
-    icons = {
-      enable = true;
-      package = pkgs.rose-pine-icon-theme;
-      dark = "rose-pine-icons";
-      light = "rose-pine-dawn-icons";
-    };
     polarity = "dark";
     autoEnable = false;
     base16Scheme = {
