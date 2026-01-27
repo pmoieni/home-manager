@@ -11,6 +11,10 @@
       package = pkgs.bibata-cursors;
       size = 12;
     };
+    icons = {
+      enable = true;
+      package = pkgs.rose-pine-icon-theme;
+    };
     polarity = "dark";
     autoEnable = false;
     base16Scheme = {
