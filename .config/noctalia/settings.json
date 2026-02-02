@@ -503,7 +503,7 @@
     },
     "wallpaper": {
         "automationEnabled": true,
-        "directory": "/home/pmoieni/Pictures/Wallpapers",
+        "directory": "/home/pmoieni/home-manager/wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "fillColor": "#000000",
@@ -522,7 +522,7 @@
         "transitionType": "wipe",
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "single",
+        "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",

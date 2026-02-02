@@ -12,5 +12,10 @@
       enable = true;
       nix-direnv.enable = true;
     };
+    zoxide = {
+      enable = true;
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+    };
   };
 }
