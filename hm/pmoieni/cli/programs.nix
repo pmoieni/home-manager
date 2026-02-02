@@ -15,10 +15,6 @@
     # so home-manager can modify the rc files
     bash.enable = true;
     fish.enable = true;
-    zoxide = {
-      enable = true;
-      enableBashIntegration = true;
-      enableFishIntegration = true;
-    };
+    zoxide.enable = true;
   };
 }
