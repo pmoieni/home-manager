@@ -12,9 +12,6 @@
       enable = true;
       nix-direnv.enable = true;
     };
-    # so home-manager can modify the rc files
-    bash.enable = true;
-    fish.enable = true;
     zoxide.enable = true;
   };
 }
