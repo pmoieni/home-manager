@@ -19,7 +19,8 @@
             "steam",
             "com.obsproject.Studio",
             "LocalSend",
-            "obsidian"
+            "obsidian",
+            "zen-beta"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -298,13 +299,18 @@
                     "id": "Notifications"
                 },
                 {
-                    "id": "PowerProfile"
-                },
-                {
                     "id": "KeepAwake"
                 },
                 {
                     "id": "NightLight"
+                },
+                {
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultDuration": 0,
+                        "iconColor": "none"
+                    },
+                    "id": "plugin:timer"
                 }
             ]
         }
