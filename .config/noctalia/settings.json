@@ -556,7 +556,7 @@
     },
     "wallpaper": {
         "automationEnabled": true,
-        "directory": "/home/pmoieni/home-manager/wallpapers",
+        "directory": "/home/pmoieni/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "fillColor": "#000000",
