@@ -123,15 +123,6 @@
                 },
                 {
                     "defaultSettings": {
-                        "activeColor": "primary",
-                        "hideInactive": false,
-                        "inactiveColor": "none",
-                        "removeMargins": false
-                    },
-                    "id": "plugin:privacy-indicator"
-                },
-                {
-                    "defaultSettings": {
                         "audioCodec": "opus",
                         "audioSource": "default_output",
                         "colorRange": "limited",
