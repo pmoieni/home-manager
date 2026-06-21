@@ -1,6 +1,10 @@
-require("pmoieni.core")
-require("pmoieni.lazy")
+require("vim._core.ui2").enable({})
 
-if vim.fn.executable('rg') == 1 then
-  vim.opt.grepprg = 'rg --hidden --smart-case --vimgrep'
-end
+require("options")
+require("keymaps")
+require("commands")
+require("pack")
+require("treesitter")
+require("lsp")
+
+vim.cmd("colorscheme tokyonight")

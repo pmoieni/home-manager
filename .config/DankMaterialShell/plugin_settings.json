@@ -1,0 +1,18 @@
+{
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "22a67d0b0cac4668ae33fd1b502af8d2"
+  },
+  "dankLauncherKeys": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": false
+  },
+  "dankNotepadModule": {
+    "enabled": true
+  },
+  "dankBatteryAlerts": {
+    "enabled": true
+  }
+}

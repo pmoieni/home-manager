@@ -1,6 +1,3 @@
-spawn-at-startup "dbus-update-activation-environment" "--all"
-spawn-at-startup "/usr/libexec/xdg-desktop-portal" "-r"
-
 // Input device configuration.
 input {
     keyboard {
@@ -41,6 +38,7 @@ hotkey-overlay {
 layout {
     gaps 8
     center-focused-column "never"
+    empty-workspace-above-first
 
     preset-column-widths {
         proportion 0.33333
@@ -52,6 +50,8 @@ layout {
 
     focus-ring {
         width 2
+        active-color "#7fc8ff"
+        inactive-color "#505050"
     }
 
     tab-indicator {
@@ -78,14 +78,6 @@ animations {
     slowdown 0.5
 }
 
-blur {
-    // off
-    passes 3
-    offset 1.5
-    noise 0.02
-    saturation 1.5
-}
-
 prefer-no-csd
 
 window-rule {
@@ -108,19 +100,6 @@ window-rule {
 window-rule {
     geometry-corner-radius 14
     clip-to-geometry true
-
-    background-effect {
-        blur true
-    }
-}
-
-layer-rule {
-    match layer="top"
-    match layer="overlay"
-
-    background-effect {
-        xray false
-    }
 }
 
 binds {
@@ -128,14 +107,9 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+A hotkey-overlay-title="Run an Application" { spawn-sh "dms ipc call launcher toggle"; }
-    Mod+B { spawn-sh "dms ipc call bar toggleAutoHide name 'Main Bar'"; }
     Super+Shift+Q hotkey-overlay-title="Session menu" { spawn-sh "dms ipc call powermenu toggle"; }
     
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
-
-    Mod+Shift+P { spawn-sh "playerctl play-pause";  }
-    Mod+Shift+Period { spawn-sh "playerctl next";  }
-    Mod+Shift+Comma { spawn-sh "playerctl previous";  }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
@@ -153,8 +127,6 @@ binds {
     Mod+O repeat=false { toggle-overview; }
 
     Mod+Q repeat=false { close-window; }
-
-    Mod+E { spawn-sh "nautilus"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -210,7 +182,7 @@ binds {
     Mod+Comma  { consume-or-expel-window-left; }
     Mod+Period { consume-or-expel-window-right; }
 
-    Mod+F { maximize-window-to-edges; }
+    Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
 
     Mod+Ctrl+F { expand-column-to-available-width; }
@@ -243,8 +215,3 @@ binds {
 include "dms/outputs.kdl"
 include "dms/binds.kdl"
 include "dms/windowrules.kdl"
-include "dms/cursor.kdl"
-include "dms/alttab.kdl"
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/wpblur.kdl"
