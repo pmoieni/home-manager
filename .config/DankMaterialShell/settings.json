@@ -209,9 +209,9 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "wifi",
-  "iconTheme": "Adwaita",
+  "iconTheme": "System Default",
   "cursorSettings": {
-    "theme": "Adwaita",
+    "theme": "System Default",
     "size": 24,
     "niri": {
       "hideWhenTyping": true,
