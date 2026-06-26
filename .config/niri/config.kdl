@@ -154,7 +154,7 @@ binds {
 
     Mod+Q repeat=false { close-window; }
 
-    Mod+E { spawn-sh "nautilus"; }
+    Mod+E { spawn-sh "thunar"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
