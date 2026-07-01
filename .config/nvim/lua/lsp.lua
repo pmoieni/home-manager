@@ -38,6 +38,7 @@ vim.lsp.enable({
     "html",
     "tailwindcss",
     "marksman",
+    "nil_ls"
 })
 
 vim.lsp.config("gopls", {
