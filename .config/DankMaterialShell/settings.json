@@ -630,10 +630,6 @@
           "enabled": true
         },
         {
-          "id": "networkIndicator",
-          "enabled": true
-        },
-        {
           "id": "controlCenterButton",
           "enabled": true,
           "showBrightnessIcon": false,
