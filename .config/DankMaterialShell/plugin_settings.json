@@ -5,5 +5,11 @@
   },
   "dankBatteryAlerts": {
     "enabled": true
+  },
+  "dankNotepadModule": {
+    "enabled": true
+  },
+  "networkIndicator": {
+    "enabled": true
   }
 }
