@@ -502,7 +502,7 @@
   "notificationCompactMode": false,
   "notificationShowTimeoutBar": false,
   "notificationDedupeEnabled": true,
-  "notificationPopupPosition": 0,
+  "notificationPopupPosition": 3,
   "notificationAnimationSpeed": 4,
   "notificationCustomAnimationDuration": 400,
   "notificationHistoryEnabled": true,
@@ -803,6 +803,6 @@
   "frameMode": "connected",
   "barInsetPaddingShared": -1,
   "barInsetPaddingSyncAll": false,
-  "frameBarInsetPadding": -1,
+  "frameBarInsetPadding": 16,
   "configVersion": 12
 }
