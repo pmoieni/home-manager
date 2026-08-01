@@ -14,10 +14,8 @@ let
       owner = "XTLS";
       repo = "Xray-core";
       rev = "v${finalAttrs.version}";
-      hash = pkgs.lib.fakeHash;
+      hash = "sha256-6qW8Un6VC0kFPyrFMQxruWz18flyeZyFs0A7avoi56I=";
     };
-
-    vendorHash = pkgs.lib.fakeHash;
 
     ldflags = [
       "-s"
