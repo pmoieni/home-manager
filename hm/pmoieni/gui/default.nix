@@ -17,7 +17,7 @@ let
       hash = "sha256-6qW8Un6VC0kFPyrFMQxruWz18flyeZyFs0A7avoi56I=";
     };
 
-    vendorHash = lib.fakeHash;
+    vendorHash = "sha256-n1/bxtOadcdnXg/opvv7gU2Dr/vbt5kGfdZCyk9CY8w=";
 
     ldflags = [
       "-s"
