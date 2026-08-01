@@ -3,23 +3,14 @@
   config,
   pkgs,
   isNixOS,
-  fetchFromGitHub,
-  symlinkJoin,
-  buildGo126Module,
-  makeWrapper,
-  nix-update-script,
-  v2ray-rules-dat,
-  assets ? [
-    v2ray-rules-dat
-  ],
   ...
 }:
 let
-  xray-git = buildGo126Module (finalAttrs: {
+  xray-git = pkgs.buildGo126Module (finalAttrs: {
     pname = "xray";
     version = "26.7.28";
 
-    src = fetchFromGitHub {
+    src = pkgs.fetchFromGitHub {
       owner = "XTLS";
       repo = "Xray-core";
       rev = "v${finalAttrs.version}";
@@ -27,10 +18,6 @@ let
     };
 
     vendorHash = pkgs.lib.fakeHash;
-
-    nativeBuildInputs = [ makeWrapper ];
-
-    doCheck = false;
 
     ldflags = [
       "-s"
@@ -43,21 +30,6 @@ let
       install -Dm555 "$GOPATH"/bin/main $out/bin/xray
       runHook postInstall
     '';
-
-    assetsDrv = symlinkJoin {
-      name = "v2ray-assets";
-      paths = assets;
-    };
-
-    postFixup = ''
-      wrapProgram $out/bin/xray \
-        --set-default V2RAY_LOCATION_ASSET $assetsDrv/share/v2ray \
-        --set-default XRAY_LOCATION_ASSET $assetsDrv/share/v2ray
-    '';
-
-    passthru = {
-      updateScript = nix-update-script { };
-    };
 
     meta = {
       description = "Platform for building proxies to bypass network restrictions. A replacement for v2ray-core, with XTLS support and fully compatible configuration";
