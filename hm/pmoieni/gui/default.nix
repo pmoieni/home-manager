@@ -45,11 +45,11 @@ in
 
   home.packages = lib.mkIf config.system.gui.enable ([ ]);
 
-  xdg.dataFile = {
+  # xdg.dataFile = {
     # v2rayn
-    "v2rayN/bin/sing_box/sing-box".source = "${pkgs.sing-box}/bin/sing-box";
-    "v2rayN/bin/xray/xray".source = "${xray-git}/bin/xray";
-    "v2rayN/bin/geoip.dat".source = "${pkgs.v2ray-geoip}/share/v2ray/geoip.dat";
-    "v2rayN/bin/geosite.dat".source = "${pkgs.v2ray-domain-list-community}/share/v2ray/geosite.dat";
-  };
+  #   "v2rayN/bin/sing_box/sing-box".source = "${pkgs.sing-box}/bin/sing-box";
+  #   "v2rayN/bin/xray/xray".source = "${xray-git}/bin/xray";
+  #   "v2rayN/bin/geoip.dat".source = "${pkgs.v2ray-geoip}/share/v2ray/geoip.dat";
+  #   "v2rayN/bin/geosite.dat".source = "${pkgs.v2ray-domain-list-community}/share/v2ray/geosite.dat";
+  # };
 }
