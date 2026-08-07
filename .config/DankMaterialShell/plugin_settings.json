@@ -11,5 +11,8 @@
   },
   "networkIndicator": {
     "enabled": false
+  },
+  "dankPomodoroTimer": {
+    "enabled": true
   }
 }
