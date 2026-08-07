@@ -14,5 +14,25 @@
   },
   "dankPomodoroTimer": {
     "enabled": true
+  },
+  "screenCaptureToolbar": {
+    "enabled": false,
+    "captureMode": "monitor",
+    "copyToClipboard": true,
+    "stdout": true,
+    "videoFormat": "mp4",
+    "showAdvancedSettings": true,
+    "videoQuality": "high",
+    "showRecPill": true,
+    "videoMonitor": "eDP-1"
+  },
+  "quickCapture": {
+    "enabled": true,
+    "outputFormat": "png",
+    "jpegQuality": 100
+  },
+  "screenRecorder": {
+    "enabled": false,
+    "quality": "high"
   }
 }
