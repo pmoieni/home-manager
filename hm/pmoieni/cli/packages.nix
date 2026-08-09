@@ -11,6 +11,7 @@
     subversion
     stow
     go
+    nodejs
     corepack
   ];
 }
