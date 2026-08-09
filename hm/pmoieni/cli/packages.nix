@@ -10,5 +10,7 @@
     ripgrep
     subversion
     stow
+    go
+    corepack
   ];
 }
