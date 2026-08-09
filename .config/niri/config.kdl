@@ -18,6 +18,7 @@ input {
         drag true
         natural-scroll
         scroll-method "two-finger"
+        accel-profile "flat"
     }
 }
 
